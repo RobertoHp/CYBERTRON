@@ -203,7 +203,7 @@ main {
   margin: 10px auto;
   overflow: hidden;
   width: 90%;
-  height: 250px;
+  height: 301px;
   text-align: center;
   padding-top: 20px;
   color: #000;
@@ -309,6 +309,7 @@ footer {
 }
 footer span {
   color: #fff;
+  text-align: center;
 }
 
 @media screen and (min-width: 420px) {
@@ -447,6 +448,10 @@ footer span {
   .team-container .cards .card img {
     width: 200px;
     height: 200px;
+  }
+
+  footer {
+    font-size: 20px;
   }
 }
 
