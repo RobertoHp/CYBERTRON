@@ -1,0 +1,453 @@
+:root {
+  --color-primario: #fff;
+  --color-secundario: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: scroll-behavior 5s;
+}
+
+h1, h2, h3, a {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+a {
+  display: block;
+}
+
+section {
+  position: relative;
+}
+
+.skew-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 15vh 100vw 0 0;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+}
+
+.skew-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 15vh 100vw 0 0;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+header {
+  background-color: #2e0f92;
+  overflow: hidden;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header nav {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 0 15px;
+}
+header nav .logo-container {
+  height: inherit;
+  padding-top: 7px;
+}
+header nav .logo-container img {
+  height: 65px;
+}
+header nav a, header nav span {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+header nav span {
+  font-size: 24px;
+  cursor: pointer;
+}
+header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+header nav .list-container {
+  background-color: #2e0f92;
+  position: fixed;
+  top: 80px;
+  left: -50%;
+  width: 50%;
+  height: 100vh;
+}
+header nav .list-container a {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #766e90;
+}
+header nav .list-container.abierto {
+  left: 0%;
+}
+
+main {
+  margin-top: 80px;
+}
+
+.home-container {
+  background-image: url("../source/img/business-3560917_1280.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home-container .line-middle {
+  background-color: #fff;
+  width: 55%;
+  height: 4px;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+.home-container .button-contact-us {
+  background-color: #3c238d;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.home-container .button-contact-us:hover {
+  background-color: #696183;
+}
+
+.about-us-container h2, .about-us-container h3 {
+  color: #444;
+}
+.about-us-container h2 {
+  font-size: 28px;
+}
+.about-us-container p {
+  padding: 10px 30px;
+  text-align: justify;
+}
+
+.gallery-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+.gallery-container .image-container {
+  width: 20%;
+  height: inherit;
+  overflow: hidden;
+}
+.gallery-container .image-container img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.team-container {
+  width: 100%;
+  min-height: 700px;
+  padding: 30px 15px;
+}
+.team-container h2, .team-container h3, .team-container p {
+  color: #333;
+  text-align: center;
+}
+.team-container .subtitulo {
+  font-size: 29px;
+}
+.team-container .slogan {
+  padding-bottom: 18px;
+}
+.team-container .cards {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.team-container .cards .card {
+  margin: 10px auto;
+  overflow: hidden;
+  width: 90%;
+  height: 250px;
+  text-align: center;
+  padding-top: 20px;
+  color: #000;
+}
+.team-container .cards .card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px 10px #aaa;
+}
+.team-container .cards .card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  padding: 15px 0;
+}
+.team-container .cards .card p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.client-container {
+  background-image: url("../source/img/network-3424070_1280.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  width: 100%;
+  min-height: 800px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.client-container .subtitulo {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.client-container .slogan {
+  padding-bottom: 18px;
+}
+.client-container .client-container-logo img {
+  width: 200px;
+  margin: auto;
+}
+.client-container .skew-down {
+  border-color: transparent #222 transparent transparent;
+}
+
+.contact-container {
+  background-color: #222;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.contact-container form {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-container form input[type=text], .contact-container form input[type=email] {
+  background-color: #555;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 100;
+  width: 45%;
+  margin-bottom: 10px;
+}
+.contact-container form textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  resize: none;
+  margin-bottom: 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+.contact-container form input[type=text]:focus, .contact-container form input[type=email]:focus {
+  border-top: 1px solid #9975d3;
+}
+.contact-container form input[type=submit] {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #222;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer span {
+  color: #fff;
+}
+
+@media screen and (min-width: 420px) {
+  .client-container .client-container-logo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .client-container .client-container-logo img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 520px) {
+  p {
+    font-size: 18px;
+  }
+
+  .about-us-container {
+    padding-bottom: 20px;
+  }
+
+  .home-container .line-middle {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 620px) {
+  .team-container .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .team-container .cards .card {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 720px) {
+  header nav .list-container {
+    position: static;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header nav .list-container a {
+    display: inline-block;
+    border: none;
+  }
+  header nav .button-menu-container {
+    display: none;
+  }
+
+  .home-container .line-middle {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 820px) {
+  .client-container .client-container-logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .client-container .client-container-logo img {
+    width: 30%;
+  }
+
+  .contact-container form {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .team-container {
+    min-height: 450px;
+  }
+  .team-container .cards .card {
+    width: 31%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .client-container {
+    height: 400px;
+  }
+  .client-container .client-container-logo img {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 85px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  header nav .list-container {
+    justify-content: flex-end;
+  }
+
+  section {
+    overflow: hidden;
+  }
+
+  .home-container {
+    height: 85vh;
+    background-position: center top;
+  }
+  .home-container a {
+    font-size: 20px;
+  }
+
+  .about-us-container {
+    height: 65vh;
+    padding: 70px 170px;
+  }
+  .about-us-container h2 {
+    font-size: 36px;
+  }
+  .about-us-container p {
+    font-size: 20px;
+  }
+
+  .team-container {
+    height: 550px;
+  }
+  .team-container h2 {
+    font-size: 36px;
+  }
+  .team-container h3 {
+    font-size: 28px;
+  }
+  .team-container .cards .card {
+    height: 350px;
+  }
+  .team-container .cards .card img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
